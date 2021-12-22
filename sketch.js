@@ -47,10 +47,6 @@ function setup() {
   mainCyclist.scale = 0.07;
 
   //set collider for mainCyclist
-
-  //mainCyclist.setCollission("rectangle",0,0,40,40);
-  //mainCyclist.setCollider("rectangle",0,0,40,40);
-  //mainCyclist.setCollission("rectangle",0,0,40,40,50);
   mainCyclist.setCollider("rectangle", 0, 0, 40, 40, 50);
 
   gameOver = createSprite(650, 150);
@@ -139,18 +135,6 @@ function draw() {
 
     redCG.setVelocityXEach(0);
     redCG.setLifetimeEach(-1);
-
-    // if(keyDown("UP_ARROW")) {
-    //   reset;
-    // }
-
-    // if(key("UP_ARROW")) {
-    //   reset();
-    // }
-
-    // if(keyDown()) {
-    //   reset();
-    // }
 
     if (keyDown("UP_ARROW")) {
       reset();
